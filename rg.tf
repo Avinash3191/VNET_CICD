@@ -8,9 +8,10 @@ terraform {
 }
 
 provider "azurerm" {
-  # Configuration options
+   features {}
+  subscription_id = "def6c89e-a855-4b2a-a2d3-a1bc15337302"
 }
-resource "azurerm_resource_group" "rg-local" {
+resource "azurerm_resource_group" "rglocal" {
   name     = "rg for CICD"
   location = "West US"
 }
